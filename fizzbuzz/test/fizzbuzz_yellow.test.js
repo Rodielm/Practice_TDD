@@ -1,5 +1,5 @@
 import test from 'tape'
-import FizzBuzz from '../src/fizzbuzz.js'
+import FizzBuzz from '../src/yellow_belt/fizzbuzz.js'
 
 test('should return Fizz is the number is divisible by 3', (t) => {
     const yellow = new FizzBuzz()
@@ -13,17 +13,6 @@ test('should return Fizz is the number is divisible by 3', (t) => {
     t.end()
 })
 
-test('should return Fizz is the number is divisible by 3 or has a 3 ', (t) => {
-    const yellow = new FizzBuzz()
-    let result = yellow.convert(23)
-    const expect = 'Fizz'
-
-    t.equal(result, expect);
-
-    result = yellow.convert(33)
-    t.equal(result, expect);
-    t.end()
-})
 
 test('should return Buzz is the number is divisible by 5', (t) => {
     const yellow = new FizzBuzz()
@@ -35,18 +24,6 @@ test('should return Buzz is the number is divisible by 5', (t) => {
     t.end()
 
 })
-
-test('should return Buzz is the number is divisible by 5 or has a 5', (t) => {
-    const yellow = new FizzBuzz()
-    let result = yellow.convert(55)
-    const expect = 'Buzz'
-
-    t.equal(result, expect);
-    t.end()
-
-})
-
-
 
 test('should return FizzBuzz is the number is divisible by 3 and 5', (t) => {
     const yellow = new FizzBuzz()
