@@ -20,6 +20,10 @@ class FizzBuzz {
     divisibleBy(num, divisible) {
         return 0 == num % divisible;
     }
+    
+    generateNumbers() {
+        return Array.from(Array(100), (num, index) => this.convert(index + 1));
+    }
 
     divisibleBy3(num) {
         return this.divisibleBy(num, 3) || this.containsNumber(num, 3);
