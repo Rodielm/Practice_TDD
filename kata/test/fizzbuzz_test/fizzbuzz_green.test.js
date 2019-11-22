@@ -1,5 +1,5 @@
 import test from 'tape'
-import FizzBuzz from '../src/green_belt/fizzbuzz.js'
+import FizzBuzz from '../../src/fizzbuzz/green_belt/fizzbuzz'
 
 test('should return Fizz is the 9th element is divisible by 3', (t) => {
     const array = new FizzBuzz().generateNumbers()
